@@ -17,6 +17,13 @@ public class LinkedListClass {
             n = n.next;
         }
     }
-
+    public static void main(String[] args) {
+        LinkedListClass ll = new LinkedListClass();
+        ll.head = new Node(11);
+        ll.second = new Node(22);
+        ll.third = new Node(33);
+        ll.head.next = ll.second;
+        ll.second.next = ll.third;
+        ll.printList();
     }
 }
