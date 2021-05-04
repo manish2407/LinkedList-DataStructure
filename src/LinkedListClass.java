@@ -1,29 +1,32 @@
 public class LinkedListClass {
     Node head;
-    Node second;
-    Node third;
-    static class Node{
+
+    static class Node {
         int data;
         Node next;
-        Node(int d){
+        Node(int d) {
             data = d;
+            next = null;
+            }
         }
-    }
-    public void printList()
-    {
+    //printlist function to print the list
+    public void printList() {
         Node n = head;
         while (n != null) {
             System.out.print(n.data + " ");
             n = n.next;
         }
     }
+
     public static void main(String[] args) {
-        LinkedListClass ll = new LinkedListClass();
-        ll.head = new Node(11);
-        ll.second = new Node(22);
-        ll.third = new Node(33);
-        ll.head.next = ll.second;
-        ll.second.next = ll.third;
-        ll.printList();
-    }
+        LinkedListClass llist = new LinkedListClass();
+        llist.head = new Node(1);
+        Node second = new Node(2);
+        Node third = new Node(3);
+
+        llist.head.next = second;
+        second.next = third;
+
+        llist.printList();
+        }
 }
