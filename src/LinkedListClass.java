@@ -29,7 +29,7 @@ public class LinkedListClass {
         llist.head.next = second;
         second.next = third;
         third.next = fourth;
-
+        fourth.next = fifth;
 
         llist.printList();
         }
