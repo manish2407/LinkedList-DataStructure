@@ -35,8 +35,13 @@ public class LinkedListClass {
 
     //insertlast Function to insert node at the ned of linked list
     public void insertLast(int new_Data){
+        Node NewNode = new Node(new_Data);
+        if(head == null){
+            System.out.println("LinkedList is empty");
+            head = NewNode;
+        }
 
-
+        }
     }
 
     //printlist function to print the list
