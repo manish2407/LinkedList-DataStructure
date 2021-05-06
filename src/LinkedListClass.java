@@ -52,17 +52,19 @@ public class LinkedListClass {
     //Delete method to delete the given key from the linkedlist
     public void delete(int data){
         Node temp = head, previous = null;
+        //to check list is empty or not
 
         // If head node itself holds the key to be deleted
         if (temp != null && temp.data == data) {
             head = temp.next; // Changed head
         }
-            while(temp!= null && temp.data != data){
-                temp = temp.next;
-                previous = temp;
-            }
+        while(temp!= null && temp.data != data){
+            previous = temp;
+            temp = temp.next;
         }
+        previous.next = temp.next;
     }
+
 
     //printlist function to print the list
     public void printList() {
@@ -99,6 +101,10 @@ public class LinkedListClass {
         //4
         llist.insertLast(8);
         System.out.println("\nAfter adding node at last position");
+        llist.printList();
+        //5
+        llist.delete(11);
+        System.out.println("\nAfter deleting a key from list");
         llist.printList();
     }
 }
