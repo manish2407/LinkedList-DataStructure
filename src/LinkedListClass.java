@@ -10,7 +10,16 @@ public class LinkedListClass {
             }
     }
 
-    //insertFirst Function to insert node at head position
+    //1.printlist function to print the list
+    public void printList() {
+        Node n = head;
+        while (n != null) {
+            System.out.print(n.data + "-->");
+            n = n.next;
+        }
+    }
+
+    //2.insertFirst Function to insert node at head position
     public void insertFirst(int new_Data){
         Node NewNode = new Node(new_Data);
         NewNode.next = head;
@@ -18,7 +27,7 @@ public class LinkedListClass {
 
     }
 
-    //insertAfter function for inserting node after given node
+    //3.insertAfter function for inserting node after given node
     public void insertAfter(Node previous_Node, int data){
         if(previous_Node == null){
             System.out.println("this will work same as insertLast Function");
@@ -33,7 +42,7 @@ public class LinkedListClass {
         }
     }
 
-    //insertlast Function to insert node at the ned of linked list
+    //4.insertlast Function to insert node at the ned of linked list
     public void insertLast(int new_Data){
         Node NewNode = new Node(new_Data);
         if(head == null){
@@ -49,29 +58,23 @@ public class LinkedListClass {
         }
     }
 
-    //Delete method to delete the given key from the linkedlist
-    public void delete(int data){
+    //5.Delete method to delete the given key from the linkedlist
+    public void delete(int data) {
         Node temp = head, previous = null;
         //to check list is empty or not
 
         // If head node itself holds the key to be deleted
         if (temp != null && temp.data == data) {
-            head = temp.next; // Changed head
+            temp = temp.next; // Changed head
         }
-        while(temp!= null && temp.data != data){
+        while (temp != null && temp.data != data) {
             previous = temp;
             temp = temp.next;
         }
-        previous.next = temp.next;
-    }
-
-
-    //printlist function to print the list
-    public void printList() {
-        Node n = head;
-        while (n != null) {
-            System.out.print(n.data + "-->");
-            n = n.next;
+        if (temp == null) {
+            System.out.println("Node not found");
+        } else {
+            previous.next = temp.next;
         }
     }
 
@@ -103,7 +106,7 @@ public class LinkedListClass {
         System.out.println("\nAfter adding node at last position");
         llist.printList();
         //5
-        llist.delete(11);
+        llist.delete(5);
         System.out.println("\nAfter deleting a key from list");
         llist.printList();
     }
