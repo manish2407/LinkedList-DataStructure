@@ -49,6 +49,11 @@ public class LinkedListClass {
         }
     }
 
+    //Delete method to delete the given key from the linkedlist
+    public void delete(int data){
+
+    }
+
     //printlist function to print the list
     public void printList() {
         Node n = head;
