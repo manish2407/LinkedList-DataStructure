@@ -40,7 +40,11 @@ public class LinkedListClass {
             System.out.println("LinkedList is empty");
             head = NewNode;
         }
+        else{
+            Node last = head;
+            while(last.next != null){
 
+            }
         }
     }
 
