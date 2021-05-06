@@ -21,7 +21,7 @@ public class LinkedListClass {
         if(previous_Node == null){
             System.out.println("this node cannot be null");
         }
-        Node NewNode = new Node(11);
+        Node NewNode = new Node(data);
         NewNode.next = previous_Node.next;
         previous_Node.next = NewNode;
     }
@@ -52,5 +52,7 @@ public class LinkedListClass {
         System.out.println("\nAfter insertion at head position");
         llist.printList();
         System.out.println("\nAfter insertion at given node");
+        llist.insertAfter(third,11);
+
     }
 }
