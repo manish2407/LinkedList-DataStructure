@@ -18,7 +18,9 @@ public class LinkedListClass {
     }
     //insertAfter function for inserting node after given node
     public void insertAfter(Node previous_Node, int data){
-        
+        if(previous_Node == null){
+            System.out.println("this node cannot be null");
+        }
     }
     //printlist function to print the list
     public void printList() {
