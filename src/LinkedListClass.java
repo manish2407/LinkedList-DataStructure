@@ -19,8 +19,11 @@ public class LinkedListClass {
     //insertAfter function for inserting node after given node
     public void insertAfter(Node previous_Node, int data){
         if(previous_Node == null){
-            System.out.println("this node cannot be null");
+            System.out.println("this will work same as insertLast Function");
         }
+        /*if(previous_Node.next == null){
+            System.out.println("this node cannot be null");
+        }*/
         else {
             Node NewNode = new Node(data);
             NewNode.next = previous_Node.next;
@@ -55,6 +58,7 @@ public class LinkedListClass {
         llist.printList();
         System.out.println("\nAfter insertion at given node");
         llist.insertAfter(third,11);
+        llist.insertAfter(fifth,6);
         llist.printList();
     }
 }
