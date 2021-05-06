@@ -9,6 +9,11 @@ public class LinkedListClass {
             next = null;
             }
         }
+        //PushFirst Function to insert node at head position
+    public void pushFirst(int new_Data){
+
+
+    }
     //printlist function to print the list
     public void printList() {
         Node n = head;
