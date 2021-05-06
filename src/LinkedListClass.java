@@ -45,7 +45,7 @@ public class LinkedListClass {
             while(last.next != null){
                 last = last.next;
             }
-            last = NewNode;
+            last.next = NewNode;
         }
     }
 
@@ -70,14 +70,17 @@ public class LinkedListClass {
         second.next = third;
         third.next = fourth;
         fourth.next = fifth;
-
+        //1
         llist.printList();
+        //2
         llist.insertFirst(0);
         System.out.println("\nAfter insertion at head position");
         llist.printList();
+        //3
         System.out.println("\nAfter insertion at given node");
         llist.insertAfter(third,11);
         llist.insertAfter(fifth,6);
         llist.printList();
+        //
     }
 }
