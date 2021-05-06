@@ -21,6 +21,9 @@ public class LinkedListClass {
         if(previous_Node == null){
             System.out.println("this node cannot be null");
         }
+        Node NewNode = new Node(11);
+        NewNode.next = previous_Node.next;
+        previous_Node.next = NewNode;
     }
     //printlist function to print the list
     public void printList() {
@@ -48,5 +51,6 @@ public class LinkedListClass {
         llist.insertFirst(0);
         System.out.println("\nAfter insertion at head position");
         llist.printList();
+        System.out.println("\nAfter insertion at given node");
     }
 }
