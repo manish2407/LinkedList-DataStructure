@@ -13,6 +13,7 @@ public class LinkedListClass {
     public void pushFirst(int new_Data){
         Node NewNode = new Node(new_Data);
         NewNode.next = head;
+        head = NewNode;
 
     }
     //printlist function to print the list
