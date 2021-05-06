@@ -57,11 +57,7 @@ public class LinkedListClass {
         if (temp != null && temp.data == data) {
             head = temp.next; // Changed head
         }
-        if(head == null){
-            System.out.println("Linkedlist is empty");
-        }
-        else{
-            while(temp.data != data){
+            while(temp!= null && temp.data != data){
                 temp = temp.next;
                 previous = temp;
             }
