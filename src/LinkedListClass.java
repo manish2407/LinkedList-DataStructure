@@ -51,7 +51,9 @@ public class LinkedListClass {
 
     //Delete method to delete the given key from the linkedlist
     public void delete(int data){
-
+        if(head == null){
+            System.out.println("Linkedlist is empty");
+        }
     }
 
     //printlist function to print the list
