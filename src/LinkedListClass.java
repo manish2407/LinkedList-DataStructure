@@ -16,6 +16,10 @@ public class LinkedListClass {
         head = NewNode;
 
     }
+    //insertAfter function for inserting node after given node
+    public void insertAfter(Node previous_Node, int data){
+        
+    }
     //printlist function to print the list
     public void printList() {
         Node n = head;
