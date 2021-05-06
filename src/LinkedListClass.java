@@ -39,5 +39,8 @@ public class LinkedListClass {
         fourth.next = fifth;
 
         llist.printList();
-        }
+        llist.pushFirst(0);
+        System.out.println("\nAfter insertion at head position");
+        llist.printList();
+    }
 }
