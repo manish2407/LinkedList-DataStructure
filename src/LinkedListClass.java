@@ -81,6 +81,9 @@ public class LinkedListClass {
         llist.insertAfter(third,11);
         llist.insertAfter(fifth,6);
         llist.printList();
-        //
+        //4
+        llist.insertLast(8);
+        System.out.println("\nAfter adding node at last position");
+        llist.printList();
     }
 }
