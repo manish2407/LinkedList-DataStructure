@@ -51,8 +51,20 @@ public class LinkedListClass {
 
     //Delete method to delete the given key from the linkedlist
     public void delete(int data){
+        Node temp = head, previous = null;
+
+        // If head node itself holds the key to be deleted
+        if (temp != null && temp.data == data) {
+            head = temp.next; // Changed head
+        }
         if(head == null){
             System.out.println("Linkedlist is empty");
+        }
+        else{
+            while(temp.data != data){
+                temp = temp.next;
+                previous = temp;
+            }
         }
     }
 
