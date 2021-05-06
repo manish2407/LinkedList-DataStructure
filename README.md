@@ -2,7 +2,7 @@
 2-After the completion of Array, We are moving forward to Linked List DataStructure. In this repository, we cover all possible sample code of  all operation that is being performed on Linked List.
 
 
-Linked ListA is a linear data structure, in which the elements are not stored at contiguous memory locations.Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at a contiguous location; the elements are linked using pointers.
+Linked List is a linear data structure, in which the elements are not stored at contiguous memory locations.Like arrays, Linked List is a linear data structure. Unlike arrays, linked list elements are not stored at a contiguous location; the elements are linked using pointers.
 
 
 Advantages over arrays
