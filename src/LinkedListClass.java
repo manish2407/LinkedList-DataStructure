@@ -9,8 +9,8 @@ public class LinkedListClass {
             next = null;
             }
         }
-        //PushFirst Function to insert node at head position
-    public void pushFirst(int new_Data){
+        //insertFirst Function to insert node at head position
+    public void insertFirst(int new_Data){
         Node NewNode = new Node(new_Data);
         NewNode.next = head;
         head = NewNode;
@@ -39,7 +39,7 @@ public class LinkedListClass {
         fourth.next = fifth;
 
         llist.printList();
-        llist.pushFirst(0);
+        llist.insertFirst(0);
         System.out.println("\nAfter insertion at head position");
         llist.printList();
     }
