@@ -8,14 +8,16 @@ public class LinkedListClass {
             data = d;
             next = null;
             }
-        }
-        //insertFirst Function to insert node at head position
+    }
+
+    //insertFirst Function to insert node at head position
     public void insertFirst(int new_Data){
         Node NewNode = new Node(new_Data);
         NewNode.next = head;
         head = NewNode;
 
     }
+
     //insertAfter function for inserting node after given node
     public void insertAfter(Node previous_Node, int data){
         if(previous_Node == null){
@@ -30,6 +32,13 @@ public class LinkedListClass {
             previous_Node.next = NewNode;
         }
     }
+
+    //insertlast Function to insert node at the ned of linked list
+    public void insertLast(int new_Data){
+
+
+    }
+
     //printlist function to print the list
     public void printList() {
         Node n = head;
