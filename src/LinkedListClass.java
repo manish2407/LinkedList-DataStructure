@@ -43,8 +43,9 @@ public class LinkedListClass {
         else{
             Node last = head;
             while(last.next != null){
-
+                last = last.next;
             }
+            last = NewNode;
         }
     }
 
