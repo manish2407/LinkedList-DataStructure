@@ -113,5 +113,8 @@ public class LinkedListClass {
         llist.delete(55);
         System.out.println("\nAfter deleting a key from list");
         llist.printList();
+        llist.delete(100);
+        System.out.println("\nAfter deleting a key from list");
+        llist.printList();
     }
 }
