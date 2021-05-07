@@ -92,6 +92,8 @@ public class LinkedListClass {
         second.next = third;
         third.next = fourth;
         fourth.next = fifth;
+        fifth.next = sixth;
+        sixth.next = seventh;
         //1
         llist.printList();
         //2
