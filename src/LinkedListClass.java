@@ -105,6 +105,10 @@ public class LinkedListClass {
         llist.insertAfter(third,40);
         llist.insertAfter(fifth,60);
         llist.printList();
+        //4
+        llist.insertLast(100);
+        System.out.println("\nAfter adding node at last position");
+        llist.printList();
 
     }
 }
