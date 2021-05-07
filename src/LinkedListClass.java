@@ -100,6 +100,11 @@ public class LinkedListClass {
         llist.insertFirst(10);
         System.out.println("\nAfter insertion at head position");
         llist.printList();
+        //3
+        System.out.println("\nAfter insertion at given node");
+        llist.insertAfter(third,40);
+        llist.insertAfter(fifth,60);
+        llist.printList();
 
     }
 }
