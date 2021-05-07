@@ -97,21 +97,9 @@ public class LinkedListClass {
         //1
         llist.printList();
         //2
-        llist.insertFirst(0);
+        llist.insertFirst(10);
         System.out.println("\nAfter insertion at head position");
         llist.printList();
-        //3
-        System.out.println("\nAfter insertion at given node");
-        llist.insertAfter(third,11);
-        llist.insertAfter(fifth,6);
-        llist.printList();
-        //4
-        llist.insertLast(8);
-        System.out.println("\nAfter adding node at last position");
-        llist.printList();
-        //5
-        llist.delete(5);
-        System.out.println("\nAfter deleting a key from list");
-        llist.printList();
+
     }
 }
