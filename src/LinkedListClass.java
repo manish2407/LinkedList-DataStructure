@@ -80,11 +80,11 @@ public class LinkedListClass {
 
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
-        llist.head = new Node(1);
-        Node second = new Node(2);
-        Node third = new Node(3);
-        Node fourth = new Node(4);
-        Node fifth = new Node(5);
+        llist.head = new Node(11);
+        Node second = new Node(22);
+        Node third = new Node(33);
+        Node fourth = new Node(44);
+        Node fifth = new Node(55);
 
         llist.head.next = second;
         second.next = third;
