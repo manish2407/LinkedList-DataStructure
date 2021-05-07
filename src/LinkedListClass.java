@@ -109,6 +109,9 @@ public class LinkedListClass {
         llist.insertLast(100);
         System.out.println("\nAfter adding node at last position");
         llist.printList();
-
+        //5
+        llist.delete(55);
+        System.out.println("\nAfter deleting a key from list");
+        llist.printList();
     }
 }
