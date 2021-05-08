@@ -111,7 +111,7 @@ public class LinkedListClass {
             Current = Current.next;
             count = count+1;
         }
-        System.out.println();
+        System.out.println("\nlength of string is "+count);
     }
 
     public static void main(String[] args) {
@@ -163,7 +163,6 @@ public class LinkedListClass {
         System.out.println("\nlist after deletion");
         llist.printList();*/
         //8
-        System.out.println("length of string is :");
         llist.lengthUsingIterativeMethod();
     }
 }
