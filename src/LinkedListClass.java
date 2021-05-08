@@ -91,7 +91,8 @@ public class LinkedListClass {
             for (int i = 0;temp!=null && i < position-1; i++) {
                 temp = temp.next;
             }
-
+            Node next = temp.next.next;
+            temp.next =  next;
         }
 
     }
@@ -139,7 +140,7 @@ public class LinkedListClass {
         System.out.println("\nAfter deleting a key from list");
         llist.printList();*/
         //6
-        llist.DeleteUsingPosition(0);
+        llist.DeleteUsingPosition(4);
         System.out.println("\nAfter deleting a node using position from list");
         llist.printList();
     }
