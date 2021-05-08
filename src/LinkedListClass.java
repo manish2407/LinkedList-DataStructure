@@ -78,6 +78,12 @@ public class LinkedListClass {
         }
     }
 
+    //delete node from linkedlist using position
+    public void DeleteUsingPosition(int position){
+
+    }
+
+
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
         llist.head = new Node(11);
@@ -114,6 +120,9 @@ public class LinkedListClass {
         System.out.println("\nAfter deleting a key from list");
         llist.printList();
         llist.delete(100);
+        System.out.println("\nAfter deleting a key from list");
+        llist.printList();
+        llist.delete(10);
         System.out.println("\nAfter deleting a key from list");
         llist.printList();
     }
