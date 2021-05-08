@@ -92,7 +92,7 @@ public class LinkedListClass {
                 temp = temp.next;
             }
             if(temp == null || temp.next == null){
-                System.out.println("You are at the end of the list");
+                System.out.println("\nYou are at the end of the list");
             }
             Node next = temp.next.next;
             temp.next =  next;
@@ -143,7 +143,7 @@ public class LinkedListClass {
         System.out.println("\nAfter deleting a key from list");
         llist.printList();*/
         //6
-        llist.DeleteUsingPosition(4);
+        llist.DeleteUsingPosition(15);
         System.out.println("\nAfter deleting a node using position from list");
         llist.printList();
     }
