@@ -143,7 +143,7 @@ public class LinkedListClass {
         System.out.println("\nAfter deleting a key from list");
         llist.printList();*/
         //6
-        llist.DeleteUsingPosition(15);
+        llist.DeleteUsingPosition(7);
         System.out.println("\nAfter deleting a node using position from list");
         llist.printList();
     }
