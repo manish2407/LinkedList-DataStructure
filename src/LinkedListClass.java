@@ -83,6 +83,13 @@ public class LinkedListClass {
         if(head == null){
             System.out.println("can't find the position of node");
         }
+        else{
+            Node temp = head;
+            if(position == 0){
+                head = head.next;
+            }
+        }
+
     }
 
 
@@ -118,7 +125,7 @@ public class LinkedListClass {
         System.out.println("\nAfter adding node at last position");
         llist.printList();
         //5
-        llist.delete(55);
+        /*llist.delete(55);
         System.out.println("\nAfter deleting a key from list");
         llist.printList();
         llist.delete(100);
@@ -126,6 +133,10 @@ public class LinkedListClass {
         llist.printList();
         llist.delete(10);
         System.out.println("\nAfter deleting a key from list");
+        llist.printList();*/
+        //6
+        llist.DeleteUsingPosition(0);
+        System.out.println("\nAfter deleting a node using position from list");
         llist.printList();
     }
 }
