@@ -80,7 +80,9 @@ public class LinkedListClass {
 
     //delete node from linkedlist using position
     public void DeleteUsingPosition(int position){
-
+        if(head == null){
+            System.out.println("can't find the position of node");
+        }
     }
 
 
