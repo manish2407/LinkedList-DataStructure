@@ -91,6 +91,9 @@ public class LinkedListClass {
             for (int i = 0;temp!=null && i < position-1; i++) {
                 temp = temp.next;
             }
+            if(temp == null || temp.next == null){
+                System.out.println("You are at the end of the list");
+            }
             Node next = temp.next.next;
             temp.next =  next;
         }
@@ -105,8 +108,8 @@ public class LinkedListClass {
         Node third = new Node(33);
         Node fourth = new Node(44);
         Node fifth = new Node(55);
-        Node sixth = new Node(55);
-        Node seventh = new Node(55);
+        Node sixth = new Node(66);
+        Node seventh = new Node(77);
 
         llist.head.next = second;
         second.next = third;
