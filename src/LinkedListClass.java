@@ -78,7 +78,7 @@ public class LinkedListClass {
         }
     }
 
-    //delete node from linkedlist using position
+    //6.delete node from linkedlist using position
     public void DeleteUsingPosition(int position){
         if(head == null){
             System.out.println("can't find the position of node");
@@ -103,13 +103,13 @@ public class LinkedListClass {
 
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
-        llist.head = new Node(11);
-        Node second = new Node(22);
-        Node third = new Node(33);
-        Node fourth = new Node(44);
-        Node fifth = new Node(55);
-        Node sixth = new Node(66);
-        Node seventh = new Node(77);
+        llist.head = new Node(22);
+        Node second = new Node(33);
+        Node third = new Node(44);
+        Node fourth = new Node(66);
+        Node fifth = new Node(77);
+        Node sixth = new Node(88);
+        Node seventh = new Node(99);
 
         llist.head.next = second;
         second.next = third;
@@ -120,13 +120,12 @@ public class LinkedListClass {
         //1
         llist.printList();
         //2
-        llist.insertFirst(10);
+        llist.insertFirst(11);
         System.out.println("\nAfter insertion at head position");
         llist.printList();
         //3
         System.out.println("\nAfter insertion at given node");
-        llist.insertAfter(third,40);
-        llist.insertAfter(fifth,60);
+        llist.insertAfter(third,55);
         llist.printList();
         //4
         llist.insertLast(100);
@@ -143,8 +142,8 @@ public class LinkedListClass {
         System.out.println("\nAfter deleting a key from list");
         llist.printList();*/
         //6
-        llist.DeleteUsingPosition(7);
+        /*llist.DeleteUsingPosition(7);
         System.out.println("\nAfter deleting a node using position from list");
-        llist.printList();
+        llist.printList();*/
     }
 }
