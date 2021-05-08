@@ -99,7 +99,10 @@ public class LinkedListClass {
         }
 
     }
-
+    //function to delete the linkedlist
+    public void DeleteLinkedList(){
+        head = null;
+    }
 
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
@@ -145,5 +148,8 @@ public class LinkedListClass {
         /*llist.DeleteUsingPosition(7);
         System.out.println("\nAfter deleting a node using position from list");
         llist.printList();*/
+        llist.DeleteLinkedList();
+        System.out.println("\nlist after deletion");
+        llist.printList();
     }
 }
