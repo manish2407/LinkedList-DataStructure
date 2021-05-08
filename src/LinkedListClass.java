@@ -99,9 +99,19 @@ public class LinkedListClass {
         }
 
     }
-    //function to delete the linkedlist
+    //7.function to delete the linkedlist
     public void DeleteLinkedList(){
         head = null;
+    }
+    //8.find the length of linkedlist
+    public void lengthUsingIterativeMethod(){
+        int count = 0;
+        Node Current = head;
+        while(Current!=null){
+            Current = Current.next;
+            count = count+1;
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -148,8 +158,12 @@ public class LinkedListClass {
         /*llist.DeleteUsingPosition(7);
         System.out.println("\nAfter deleting a node using position from list");
         llist.printList();*/
-        llist.DeleteLinkedList();
+        //7
+        /*llist.DeleteLinkedList();
         System.out.println("\nlist after deletion");
-        llist.printList();
+        llist.printList();*/
+        //8
+        System.out.println("length of string is :");
+        llist.lengthUsingIterativeMethod();
     }
 }
