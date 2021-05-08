@@ -88,6 +88,10 @@ public class LinkedListClass {
             if(position == 0){
                 head = head.next;
             }
+            for (int i = 0;temp!=null && i < position-1; i++) {
+                temp = temp.next;
+            }
+
         }
 
     }
