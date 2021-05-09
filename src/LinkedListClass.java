@@ -148,10 +148,10 @@ public class LinkedListClass {
             System.out.println("Index is out of range");
         }
         current = head;
-        for (int i = 0; i < length-index+1 ; i++) {
+        for (int i = 1; i < length-index+1 ; i++) {
             current = current.next;
         }
-
+        System.out.println("\nvalue of nth node from end is "+current.data);
     }
 
     public static void main(String[] args) {
@@ -209,5 +209,6 @@ public class LinkedListClass {
         //10
         /*llist.getNthNode(4);
         llist.getNthNode(13);*/
+        llist.nthNodeFromEnd(5);
     }
 }
