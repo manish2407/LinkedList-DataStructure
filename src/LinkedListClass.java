@@ -116,6 +116,9 @@ public class LinkedListClass {
     //9. Search an element in given linkedlist
     public boolean search(int key){
         Node current = head;
+        while (current!=null){
+
+        }
     }
 
     public static void main(String[] args) {
