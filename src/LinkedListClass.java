@@ -140,6 +140,10 @@ public class LinkedListClass {
     public void nthNodeFromEnd(int index){
         int length = 0;
         Node current = head;
+        while(current !=null){
+            length = length+1;
+            current = current.next;
+        }
 
     }
 
