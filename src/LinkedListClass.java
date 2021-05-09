@@ -144,6 +144,9 @@ public class LinkedListClass {
             length = length+1;
             current = current.next;
         }
+        if(index>length){
+            System.out.println("Index is out of range");
+        }
 
     }
 
