@@ -161,20 +161,12 @@ public class LinkedListClass {
             length = length+1;
             current = current.next;
         }
-        current = head;
-        if(length%2!=0) {
-            for (int i = 1; i <= length / 2; i++) {
-                current = current.next;
-            }
-            System.out.println("\nvalue of middle node is " + current.data);
-        }
         else{
             current = head;
             for (int i = 1; i < length / 2; i++) {
                 current = current.next;
             }
             System.out.println("\nvalue of middle node is " + current.data);
-
         }
     }
 
