@@ -114,15 +114,15 @@ public class LinkedListClass {
         System.out.println("\nlength of string is "+count);
     }
     //9. Search an element in given linkedlist
-    public boolean search(int key){
+    public void search(int key){
         Node current = head;
         while (current!=null){
             if (current.data == key){
-                return true;
+                System.out.println("Key found");
             }
             current = current.next;
         }
-        return false;
+        System.out.println("\nKey not found");
     }
 
     public static void main(String[] args) {
@@ -175,5 +175,7 @@ public class LinkedListClass {
         llist.printList();*/
         //8
         /*llist.lengthUsingIterativeMethod();*/
+        //9
+        llist.search(5);
     }
 }
