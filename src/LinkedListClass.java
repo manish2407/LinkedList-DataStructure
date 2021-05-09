@@ -117,7 +117,10 @@ public class LinkedListClass {
     public boolean search(int key){
         Node current = head;
         while (current!=null){
-
+            if (current.data == key){
+                return true;
+            }
+            current = current.next;
         }
     }
 
