@@ -130,11 +130,12 @@ public class LinkedListClass {
         Node current = head;
         while(current!=null){
             if(count == index){
-                System.out.println("data at "+count+"th node is"+current.data);
+                System.out.println("\ndata at "+count+"th node is "+current.data);
             }
             count = count+1;
             current = current.next;
         }
+
     }
 
 
@@ -191,5 +192,7 @@ public class LinkedListClass {
         //9
         /*llist.search(55);*/
         //10
+        llist.getNthNode(4);
+        llist.getNthNode(13);
     }
 }
