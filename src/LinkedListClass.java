@@ -132,6 +132,8 @@ public class LinkedListClass {
             if(count == index){
                 System.out.println("data at "+count+"th node is"+current.data);
             }
+            count = count+1;
+            current = current.next;
         }
     }
 
@@ -188,5 +190,6 @@ public class LinkedListClass {
         /*llist.lengthUsingIterativeMethod();*/
         //9
         /*llist.search(55);*/
+        //10
     }
 }
