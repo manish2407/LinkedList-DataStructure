@@ -135,9 +135,11 @@ public class LinkedListClass {
             count = count+1;
             current = current.next;
         }
+    }
+    //11 find the value of nth node from last
+    public void nthNodeFromEnd(int index){
 
     }
-
 
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
@@ -192,7 +194,7 @@ public class LinkedListClass {
         //9
         /*llist.search(55);*/
         //10
-        llist.getNthNode(4);
-        llist.getNthNode(13);
+        /*llist.getNthNode(4);
+        llist.getNthNode(13);*/
     }
 }
