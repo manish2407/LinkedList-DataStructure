@@ -122,6 +122,7 @@ public class LinkedListClass {
             }
             current = current.next;
         }
+        return false;
     }
 
     public static void main(String[] args) {
