@@ -126,6 +126,8 @@ public class LinkedListClass {
     }
     //10 getNthNode function to get the data of no node int the linkedlist
     public void getNthNode(int index){
+        int count;
+        Node current = head;
 
     }
 
