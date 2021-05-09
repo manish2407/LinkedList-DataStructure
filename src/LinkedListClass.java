@@ -124,6 +124,11 @@ public class LinkedListClass {
         }
         return false;
     }
+    //10 getNthNode function to get the data of no node int the linkedlist
+    public void getNthNode(int index){
+
+    }
+
 
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
@@ -176,6 +181,6 @@ public class LinkedListClass {
         //8
         /*llist.lengthUsingIterativeMethod();*/
         //9
-        llist.search(55);
+        /*llist.search(55);*/
     }
 }
