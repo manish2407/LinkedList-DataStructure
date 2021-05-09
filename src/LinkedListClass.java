@@ -126,10 +126,12 @@ public class LinkedListClass {
     }
     //10 getNthNode function to get the data of no node int the linkedlist
     public void getNthNode(int index){
-        int count;
+        int count = 0;
         Node current = head;
         while(current!=null){
-
+            if(count == index){
+                System.out.println("data at "+count+"th node is"+current.data);
+            }
         }
     }
 
