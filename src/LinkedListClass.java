@@ -113,6 +113,10 @@ public class LinkedListClass {
         }
         System.out.println("\nlength of string is "+count);
     }
+    //9. Search an element in given linkedlist
+    public boolean search(int key){
+
+    }
 
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
@@ -163,6 +167,6 @@ public class LinkedListClass {
         System.out.println("\nlist after deletion");
         llist.printList();*/
         //8
-        llist.lengthUsingIterativeMethod();
+        /*llist.lengthUsingIterativeMethod();*/
     }
 }
