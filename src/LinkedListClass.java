@@ -138,6 +138,8 @@ public class LinkedListClass {
     }
     //11 find the value of nth node from last
     public void nthNodeFromEnd(int index){
+        int length = 0;
+        Node current = head;
 
     }
 
