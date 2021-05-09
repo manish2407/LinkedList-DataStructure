@@ -128,7 +128,9 @@ public class LinkedListClass {
     public void getNthNode(int index){
         int count;
         Node current = head;
+        while(current!=null){
 
+        }
     }
 
 
