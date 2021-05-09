@@ -147,6 +147,10 @@ public class LinkedListClass {
         if(index>length){
             System.out.println("Index is out of range");
         }
+        current = head;
+        for (int i = 0; i < length-index+1 ; i++) {
+            current = current.next;
+        }
 
     }
 
