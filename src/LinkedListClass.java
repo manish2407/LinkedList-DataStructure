@@ -153,6 +153,30 @@ public class LinkedListClass {
         }
         System.out.println("\nvalue of nth node from end is "+current.data);
     }
+    //12.return the middle value of linkedlist
+    public  void  middleValue(){
+        int length = 1;
+        Node current = head;
+        while(current !=null){
+            length = length+1;
+            current = current.next;
+        }
+        current = head;
+        if(length%2!=0) {
+            for (int i = 1; i <= length / 2; i++) {
+                current = current.next;
+            }
+            System.out.println("\nvalue of middle node is " + current.data);
+        }
+        else{
+            current = head;
+            for (int i = 1; i < length / 2; i++) {
+                current = current.next;
+            }
+            System.out.println("\nvalue of middle node is " + current.data);
+
+        }
+    }
 
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
@@ -209,6 +233,9 @@ public class LinkedListClass {
         //10
         /*llist.getNthNode(4);
         llist.getNthNode(13);*/
-        llist.nthNodeFromEnd(5);
+        //11
+        /*llist.nthNodeFromEnd(5);*/
+        //12
+        llist.middleValue();
     }
 }
