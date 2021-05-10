@@ -187,24 +187,29 @@ public class LinkedListClass {
         }
         System.out.println("\n"+key+" occurs "+count+" times.");
     }
-    //Function to reverse the linkedlist
-    public  Node reverse(Node head){
+    //14.Function to reverse the linkedlist
+    public  Node reverse(){
         Node previous = null;
         Node next = null;
         Node current = head;
         while (current!=null){
-
+            next = current.next;
+            current.next=previous;
+            previous=current;
+            current=next;
         }
+        head = previous;
+        return  head;
     }
 
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
         llist.head = new Node(22);
-        Node second = new Node(44);
-        Node third = new Node(33);
-        Node fourth = new Node(88);
+        Node second = new Node(33);
+        Node third = new Node(44);
+        Node fourth = new Node(66);
         Node fifth = new Node(77);
-        Node sixth = new Node(66);
+        Node sixth = new Node(88);
         Node seventh = new Node(99);
 
         llist.head.next = second;
@@ -258,5 +263,11 @@ public class LinkedListClass {
         /*llist.middleValue();*/
         //13
         /*llist.frequencyofValue(55);*/
+        //14
+        System.out.println("Given Linked list");
+        llist.printList();
+        Node node = llist.reverse();
+        System.out.println("\nReversed linked list ");
+        llist.printList();
     }
 }
