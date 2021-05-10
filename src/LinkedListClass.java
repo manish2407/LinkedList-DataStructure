@@ -187,6 +187,10 @@ public class LinkedListClass {
         }
         System.out.println("\n"+key+" occurs "+count+" times.");
     }
+    //Function to reverse the linkedlist
+    public  Node reverse(Node head){
+
+    }
 
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
