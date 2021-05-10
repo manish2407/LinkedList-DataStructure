@@ -189,7 +189,12 @@ public class LinkedListClass {
     }
     //Function to reverse the linkedlist
     public  Node reverse(Node head){
+        Node previous = null;
+        Node next = null;
+        Node current = head;
+        while (current!=null){
 
+        }
     }
 
     public static void main(String[] args) {
