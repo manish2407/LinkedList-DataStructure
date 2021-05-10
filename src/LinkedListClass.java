@@ -177,6 +177,8 @@ public class LinkedListClass {
     }
     //count the no. of times key occurs in linkedlist
     public void frequencyofValue(int key){
+        int count = 0;
+        Node cuurrent = head;
 
     }
 
