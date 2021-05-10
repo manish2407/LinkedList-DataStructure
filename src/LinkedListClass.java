@@ -175,6 +175,10 @@ public class LinkedListClass {
             System.out.println("\nvalue of middle node is " + current.data);
         }
     }
+    //count the no. of times key occurs in linkedlist
+    public void frequencyofValue(int key){
+
+    }
 
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
