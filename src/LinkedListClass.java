@@ -175,7 +175,7 @@ public class LinkedListClass {
             System.out.println("\nvalue of middle node is " + current.data);
         }
     }
-    //count the no. of times key occurs in linkedlist
+    //13.count the no. of times key occurs in linkedlist
     public void frequencyofValue(int key){
         int count = 0;
         Node current = head;
@@ -191,11 +191,11 @@ public class LinkedListClass {
     public static void main(String[] args) {
         LinkedListClass llist = new LinkedListClass();
         llist.head = new Node(22);
-        Node second = new Node(33);
-        Node third = new Node(44);
-        Node fourth = new Node(66);
+        Node second = new Node(44);
+        Node third = new Node(33);
+        Node fourth = new Node(88);
         Node fifth = new Node(77);
-        Node sixth = new Node(88);
+        Node sixth = new Node(66);
         Node seventh = new Node(99);
 
         llist.head.next = second;
@@ -248,6 +248,6 @@ public class LinkedListClass {
         //12
         /*llist.middleValue();*/
         //13
-        llist.frequencyofValue(55);
+        /*llist.frequencyofValue(55);*/
     }
 }
