@@ -1,3 +1,5 @@
+package SinglyLinkedList;
+
 public class LinkedListClass {
     Node head;
 
@@ -219,19 +221,19 @@ public class LinkedListClass {
         fifth.next = sixth;
         sixth.next = seventh;
         //1
-        llist.printList();
+        /*llist.printList();*/
         //2
-        llist.insertFirst(11);
+        /*llist.insertFirst(11);
         System.out.println("\nAfter insertion at head position");
-        llist.printList();
+        llist.printList();*/
         //3
-        System.out.println("\nAfter insertion at given node");
+        /*System.out.println("\nAfter insertion at given node");
         llist.insertAfter(third,55);
-        llist.printList();
+        llist.printList();*/
         //4
-        llist.insertLast(100);
+        /*llist.insertLast(100);
         System.out.println("\nAfter adding node at last position");
-        llist.printList();
+        llist.printList();*/
         //5
         /*llist.delete(55);
         System.out.println("\nAfter deleting a key from list");
@@ -264,10 +266,10 @@ public class LinkedListClass {
         //13
         /*llist.frequencyofValue(55);*/
         //14
-        System.out.println("\nGiven Linked list");
+        /*System.out.println("\nGiven Linked list");
         llist.printList();
         Node node = llist.reverse();
         System.out.println("\nReversed linked list ");
-        llist.printList();
+        llist.printList();*/
     }
 }
