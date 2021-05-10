@@ -183,9 +183,9 @@ public class LinkedListClass {
             if(current.data==key){
                 count = count+1;
             }
-            current=current.next
+            current=current.next;
         }
-        System.out.println();
+        System.out.println("\n"+key+" occurs "+count+" times.");
     }
 
     public static void main(String[] args) {
@@ -246,6 +246,8 @@ public class LinkedListClass {
         //11
         /*llist.nthNodeFromEnd(5);*/
         //12
-        llist.middleValue();
+        /*llist.middleValue();*/
+        //13
+        llist.frequencyofValue(55);
     }
 }
