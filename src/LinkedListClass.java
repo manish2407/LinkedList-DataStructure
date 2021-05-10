@@ -264,7 +264,7 @@ public class LinkedListClass {
         //13
         /*llist.frequencyofValue(55);*/
         //14
-        System.out.println("Given Linked list");
+        System.out.println("\nGiven Linked list");
         llist.printList();
         Node node = llist.reverse();
         System.out.println("\nReversed linked list ");
