@@ -178,8 +178,14 @@ public class LinkedListClass {
     //count the no. of times key occurs in linkedlist
     public void frequencyofValue(int key){
         int count = 0;
-        Node cuurrent = head;
-
+        Node current = head;
+        while(current!=null){
+            if(current.data==key){
+                count = count+1;
+            }
+            current=current.next
+        }
+        System.out.println();
     }
 
     public static void main(String[] args) {
