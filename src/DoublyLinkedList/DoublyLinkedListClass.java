@@ -6,6 +6,8 @@ public class DoublyLinkedListClass {
         int data;
         Node previous;
         Node next;
+        public Node(int d){
 
+        }
     }
 }
