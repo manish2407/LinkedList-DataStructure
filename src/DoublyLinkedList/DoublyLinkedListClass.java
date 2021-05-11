@@ -7,7 +7,9 @@ public class DoublyLinkedListClass {
         Node previous;
         Node next;
         public Node(int d){
-
+            data = d;
+            previous=null;
+            next=null;
         }
     }
 }
