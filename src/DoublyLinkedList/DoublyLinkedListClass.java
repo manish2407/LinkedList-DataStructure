@@ -16,6 +16,10 @@ public class DoublyLinkedListClass {
             next=null;
         }
     }
+    //1. insert node at head in doubly linked list
+    public  void insertAtFirst(int data){
+
+    }
 
     public static void main(String[] args) {
 
