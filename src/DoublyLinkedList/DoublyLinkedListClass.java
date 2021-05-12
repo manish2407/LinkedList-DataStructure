@@ -24,6 +24,7 @@ public class DoublyLinkedListClass {
         if(head!=null){
             head.previous=newNode;
         }
+        head = newNode;
     }
 
     public static void main(String[] args) {
