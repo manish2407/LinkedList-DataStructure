@@ -20,7 +20,7 @@ public class DoublyLinkedListClass {
     public  void insertAtFirst(int data){
         Node newNode = new Node(data);
         newNode.next = head;
-
+        newNode.previous = null;
     }
 
     public static void main(String[] args) {
