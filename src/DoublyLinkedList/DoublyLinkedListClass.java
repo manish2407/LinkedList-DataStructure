@@ -28,7 +28,7 @@ public class DoublyLinkedListClass {
     }
 
     public static void main(String[] args) {
-
+        DoublyLinkedListClass dll = new DoublyLinkedListClass();
     }
 
 }
