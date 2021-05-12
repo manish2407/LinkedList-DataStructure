@@ -19,6 +19,8 @@ public class DoublyLinkedListClass {
     //1. insert node at head in doubly linked list
     public  void insertAtFirst(int data){
         Node newNode = new Node(data);
+        newNode.next = head;
+
     }
 
     public static void main(String[] args) {
