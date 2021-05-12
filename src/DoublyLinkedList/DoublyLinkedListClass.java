@@ -1,10 +1,12 @@
 package DoublyLinkedList;
 
+import SinglyLinkedList.LinkedListClass;
+
 public class DoublyLinkedListClass {
     Node head;      //head node
 
     //Node class
-    class Node{
+    static class Node{
         int data;
         Node previous;
         Node next;
@@ -29,6 +31,10 @@ public class DoublyLinkedListClass {
 
     public static void main(String[] args) {
         DoublyLinkedListClass dll = new DoublyLinkedListClass();
+        dll.head = new Node(22);
+        Node second = new Node(33);
+        Node third = new Node(44);
+        Node fourth = new Node(66);
     }
 
 }
