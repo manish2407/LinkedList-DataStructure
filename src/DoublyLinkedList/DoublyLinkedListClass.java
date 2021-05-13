@@ -50,10 +50,10 @@ public class DoublyLinkedListClass {
         dll.head = new Node(22);
         Node second = new Node(33);
         Node third = new Node(44);
-        Node fourth = new Node(66);
+        Node fourth = new Node(55);
         Node fifth = new Node(66);
-        Node sixth = new Node(66);
-        Node seventh = new Node(66);
+        Node sixth = new Node(77);
+        Node seventh = new Node(88);
         dll.head.next = second;
         second.next = third;
         third.next = fourth;
@@ -62,6 +62,7 @@ public class DoublyLinkedListClass {
         sixth.next = seventh;
         System.out.println("\ndoubly linked list after insertion at node is:");
         dll.insertAtFirst(11);
+        dll.printlist();
     }
 
 }
