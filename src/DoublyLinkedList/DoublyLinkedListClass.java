@@ -22,15 +22,15 @@ public class DoublyLinkedListClass {
         Node last = null;
         System.out.println("Linked list traversal in forward direction");
         while (node!=null){
-            System.out.println(node.data+"-->");
-            last = node;
+            System.out.print(node.data+"-->");
             node = node.next;
         }
+        node = node.previous;
         System.out.println();
         System.out.println("linked list traversal in reverse order");
-        while (last!=null){
-            System.out.println(last.data+"-->");
-            last = last.next;
+        while (node!=head){
+            System.out.println(node.data+"-->");
+            node = node.previous;
         }
     }
     //2. insert node at head in doubly linked list
@@ -60,6 +60,7 @@ public class DoublyLinkedListClass {
         fourth.next = fifth;
         fifth.next = sixth;
         sixth.next = seventh;
+        dll.printlist();
         System.out.println("\ndoubly linked list after insertion at node is:");
         dll.insertAtFirst(11);
         dll.printlist();
