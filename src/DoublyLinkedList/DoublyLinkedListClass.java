@@ -26,6 +26,12 @@ public class DoublyLinkedListClass {
             last = node;
             node = node.next;
         }
+        System.out.println();
+        System.out.println("linked list traversal in reverse order");
+        while (last!=null){
+            System.out.println(last.data+"-->");
+            last = last.next;
+        }
     }
     //2. insert node at head in doubly linked list
     public  void insertAtFirst(int data){
