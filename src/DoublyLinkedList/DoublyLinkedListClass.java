@@ -35,6 +35,7 @@ public class DoublyLinkedListClass {
         Node fourth = new Node(66);
         Node fourth = new Node(66);
         Node fourth = new Node(66);
+        Node fourth = new Node(66);
         dll.head.next = second;
         second.next = third;
         third.next = fourth;
