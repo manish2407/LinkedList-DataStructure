@@ -40,6 +40,7 @@ public class DoublyLinkedListClass {
         second.next = third;
         third.next = fourth;
         fourth.next = fifth;
+        fifth.next = sixth;
         System.out.println("\ndoubly linked list after insertion at node is:");
         dll.insertAtFirst(11);
     }
