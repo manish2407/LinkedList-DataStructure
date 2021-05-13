@@ -18,7 +18,7 @@ public class DoublyLinkedListClass {
     }
     //1. printlist function to print the linked list in both direction
     public void printlist(){
-
+        Node node = head;
     }
     //2. insert node at head in doubly linked list
     public  void insertAtFirst(int data){
