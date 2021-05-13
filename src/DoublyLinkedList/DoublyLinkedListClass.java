@@ -22,7 +22,9 @@ public class DoublyLinkedListClass {
         Node last = null;
         System.out.println("Linked list traversal in forward direction");
         while (node!=null){
-
+            System.out.println(node.data+"-->");
+            last = node;
+            node = node.next;
         }
     }
     //2. insert node at head in doubly linked list
