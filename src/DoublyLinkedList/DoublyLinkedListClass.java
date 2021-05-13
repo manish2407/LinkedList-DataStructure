@@ -20,6 +20,10 @@ public class DoublyLinkedListClass {
     public void printlist(){
         Node node = head;
         Node last = null;
+        System.out.println("Linked list traversal in forward direction");
+        while (node!=null){
+
+        }
     }
     //2. insert node at head in doubly linked list
     public  void insertAtFirst(int data){
