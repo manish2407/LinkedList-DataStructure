@@ -1,7 +1,5 @@
 package DoublyLinkedList;
 
-import SinglyLinkedList.LinkedListClass;
-
 public class DoublyLinkedListClass {
     Node head;      //head node
 
@@ -34,6 +32,7 @@ public class DoublyLinkedListClass {
         dll.head = new Node(22);
         Node second = new Node(33);
         Node third = new Node(44);
+        Node fourth = new Node(66);
         Node fourth = new Node(66);
         dll.head.next = second;
         second.next = third;
