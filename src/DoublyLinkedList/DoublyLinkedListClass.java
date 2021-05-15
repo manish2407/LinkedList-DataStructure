@@ -52,6 +52,14 @@ public class DoublyLinkedListClass {
         }
         else{
             newNode.next = givenNode.next;
+            givenNode.next = newNode;
+
+            /* 6. Make prev_node as previous of new_node */
+            new_node.prev = prev_Node;
+
+            /* 7. Change previous of new_node's next node */
+            if (new_node.next != null)
+                new_node.next.prev = new_node;
         }
     }
 
