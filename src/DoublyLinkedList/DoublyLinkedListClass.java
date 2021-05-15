@@ -50,6 +50,9 @@ public class DoublyLinkedListClass {
         if(givenNode==null){
             System.out.println("it will work same as insertAtFirst function");
         }
+        else{
+            newNode.next = givenNode.next;
+        }
     }
 
     public static void main(String[] args) {
