@@ -47,6 +47,9 @@ public class DoublyLinkedListClass {
     public void insertAtgivenNode(Node givenNode, int data){
         Node current = head;
         Node newNode = new Node(data);
+        if(givenNode==null){
+            System.out.println("it will work same as insertAtFirst function");
+        }
     }
 
     public static void main(String[] args) {
