@@ -43,7 +43,10 @@ public class DoublyLinkedListClass {
         }
         head = newNode;
     }
+    //2. insert a node after a given node
+    public void insertAtgivenNode(Node givenNode, int data){
 
+    }
 
     public static void main(String[] args) {
         DoublyLinkedListClass dll = new DoublyLinkedListClass();
@@ -60,10 +63,12 @@ public class DoublyLinkedListClass {
         fourth.next = fifth;
         fifth.next = sixth;
         sixth.next = seventh;
-        dll.printlist();
-        System.out.println("\ndoubly linked list after insertion at node is:");
+        //1
+        /*dll.printlist();*/
+        //2
+        /*System.out.println("\ndoubly linked list after insertion at node is:");
         dll.insertAtFirst(11);
-        dll.printlist();
+        dll.printlist();*/
     }
 
 }

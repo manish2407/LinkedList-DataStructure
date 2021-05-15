@@ -44,7 +44,7 @@ public class LinkedListClass {
         }
     }
 
-    //4.insertlast Function to insert node at the ned of linked list
+    //4.insertlast Function to insert node at the end of linked list
     public void insertLast(int new_Data){
         Node NewNode = new Node(new_Data);
         if(head == null){
