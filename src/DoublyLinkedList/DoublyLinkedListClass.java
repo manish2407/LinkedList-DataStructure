@@ -24,14 +24,14 @@ public class DoublyLinkedListClass {
         while (node!=null){
             System.out.print(node.data+"-->");
             node = node.next;
-        }
+        }/*
         node = node.previous;
         System.out.println();
         System.out.println("linked list traversal in reverse order");
         while (node!=head){
             System.out.println(node.data+"-->");
             node = node.previous;
-        }
+        }*/
     }
     //2. insert node at head in doubly linked list
     public  void insertAtFirst(int data){
@@ -81,6 +81,11 @@ public class DoublyLinkedListClass {
         /*System.out.println("\ndoubly linked list after insertion at node is:");
         dll.insertAtFirst(11);
         dll.printlist();*/
+        //3
+        dll.printlist();
+        System.out.println("\ndoubly linked list after insertion of node after a given node is:");
+        dll.insertAtgivenNode(sixth,80);
+        dll.printlist();
     }
 
 }
