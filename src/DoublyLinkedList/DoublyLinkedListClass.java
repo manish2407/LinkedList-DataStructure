@@ -62,12 +62,13 @@ public class DoublyLinkedListClass {
     //4. Insert node at the end of linked list
     public void InsertAtEnd(int data){
         Node newNode = new Node(data);
+        newNode.next = null;
         Node current = head;
         if(head==null){
             head=newNode;
             newNode.previous=null;
         }
-        while(current!=null){
+        while(current.next!=null){
             current = current.next;
         }
         current.next = newNode;
@@ -96,10 +97,17 @@ public class DoublyLinkedListClass {
         dll.insertAtFirst(11);
         dll.printlist();*/
         //3
-        dll.printlist();
+        /*dll.printlist();
         System.out.println("\ndoubly linked list after insertion of node after a given node is:");
         dll.insertAtgivenNode(sixth,80);
+        dll.printlist();*/
+        //4
+        System.out.println("\ndoubly linked list after insertion of node at end is:");
         dll.printlist();
+        System.out.println("\ndoubly linked list after insertion of node at end is:");
+        dll.InsertAtEnd(99);
+        dll.printlist();
+
     }
 
 }
