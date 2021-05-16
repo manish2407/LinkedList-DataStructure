@@ -63,6 +63,9 @@ public class DoublyLinkedListClass {
     public void InsertAtEnd(int data){
         Node newNode = new Node(data);
         Node current = head;
+        if(head==null){
+
+        }
 
     }
 
