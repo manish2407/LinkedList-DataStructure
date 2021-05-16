@@ -43,7 +43,7 @@ public class DoublyLinkedListClass {
         }
         head = newNode;
     }
-    //2. insert a node after a given node
+    //3. insert a node after a given node
     public void insertAtgivenNode(Node givenNode, int data){
         Node current = head;
         Node newNode = new Node(data);
@@ -58,6 +58,10 @@ public class DoublyLinkedListClass {
                 newNode.next.previous = newNode;
             }
         }
+    }
+    //4. Insert node at the end of linked list
+    public void InsertAtEnd(int data){
+
     }
 
     public static void main(String[] args) {
