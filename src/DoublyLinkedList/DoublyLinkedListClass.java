@@ -68,9 +68,10 @@ public class DoublyLinkedListClass {
             newNode.previous=null;
         }
         while(current!=null){
-
+            current = current.next;
         }
-
+        current.next = newNode;
+        newNode.previous = current;
     }
 
     public static void main(String[] args) {
