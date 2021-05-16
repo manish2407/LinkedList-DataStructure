@@ -61,7 +61,7 @@ public class DoublyLinkedListClass {
     }
     //4. Insert node at the end of linked list
     public void InsertAtEnd(int data){
-
+        Node newNode = new Node(data);
     }
 
     public static void main(String[] args) {
