@@ -64,7 +64,8 @@ public class DoublyLinkedListClass {
         Node newNode = new Node(data);
         Node current = head;
         if(head==null){
-
+            head.next=newNode;
+            newNode.previous=null;
         }
 
     }
