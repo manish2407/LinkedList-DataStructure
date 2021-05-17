@@ -74,6 +74,10 @@ public class DoublyLinkedListClass {
         current.next = newNode;
         newNode.previous = current;
     }
+    //insert node before the given node
+    public void InsertBeforeNode(Node new_Node, int data){
+
+    }
 
     public static void main(String[] args) {
         DoublyLinkedListClass dll = new DoublyLinkedListClass();
