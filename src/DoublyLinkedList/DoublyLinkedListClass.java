@@ -77,7 +77,7 @@ public class DoublyLinkedListClass {
     //insert node before the given node
     public void InsertBeforeNode(Node new_Node, int data){
         Node current = head;
-
+        Node newNode = new Node(data);
     }
 
     public static void main(String[] args) {
