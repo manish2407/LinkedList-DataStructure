@@ -74,10 +74,9 @@ public class DoublyLinkedListClass {
         current.next = newNode;
         newNode.previous = current;
     }
-    //insert node before the given node
-    public void InsertBeforeNode(Node new_Node, int data){
-        Node current = head;
-        Node newNode = new Node(data);
+    //5. deleteHead to delete the head node
+    public void deletehead(Node deletionnode){
+
     }
 
     public static void main(String[] args) {
@@ -107,11 +106,11 @@ public class DoublyLinkedListClass {
         dll.insertAtgivenNode(sixth,80);
         dll.printlist();*/
         //4
-        System.out.println("\ndoubly linked list after insertion of node at end is:");
+        /*System.out.println("\ndoubly linked list after insertion of node at end is:");
         dll.printlist();
         System.out.println("\ndoubly linked list after insertion of node at end is:");
         dll.InsertAtEnd(99);
-        dll.printlist();
+        dll.printlist();*/
 
     }
 
