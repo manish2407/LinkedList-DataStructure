@@ -75,9 +75,10 @@ public class DoublyLinkedListClass {
         newNode.previous = current;
     }
     //5. deleteHead to delete the head node
-    public void deletehead(Node deletionnode){
+    public void deletehead(Node data){
         Node current = head;
-        if( deletionnode == head){
+        Node newnode = new Node(data);
+        if( newnode == current){
             head.next = head;
             head.previous = null;
         }
