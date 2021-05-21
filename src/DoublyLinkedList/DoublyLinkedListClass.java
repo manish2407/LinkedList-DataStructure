@@ -1,7 +1,7 @@
 package DoublyLinkedList;
 
 public class DoublyLinkedListClass {
-    Node head;      //head node
+    static Node head;      //head node
 
     //Node class
     static class Node{
@@ -81,7 +81,6 @@ public class DoublyLinkedListClass {
             head.next = head;
             head.previous = null;
         }
-        System.out.println();
     }
 
     public static void main(String[] args) {
@@ -100,7 +99,7 @@ public class DoublyLinkedListClass {
         fifth.next = sixth;
         sixth.next = seventh;
         //1
-        /*dll.printlist();*/
+        dll.printlist();
         //2
         /*System.out.println("\ndoubly linked list after insertion at node is:");
         dll.insertAtFirst(11);
@@ -116,6 +115,9 @@ public class DoublyLinkedListClass {
         System.out.println("\ndoubly linked list after insertion of node at end is:");
         dll.InsertAtEnd(99);
         dll.printlist();*/
+        System.out.println("\nlinked list after deletion is");
+        dll.deletehead(head);
+
 
     }
 
