@@ -24,14 +24,14 @@ public class DoublyLinkedListClass {
         while (node!=null){
             System.out.print(node.data+"-->");
             node = node.next;
-        }/*
-        node = node.previous;
-        System.out.println();
-        System.out.println("linked list traversal in reverse order");
-        while (node!=head){
-            System.out.println(node.data+"-->");
-            node = node.previous;
-        }*/
+        }
+//        node = node.previous;
+//        System.out.println();
+//        System.out.println("linked list traversal in reverse order");
+//        while (node!=head){
+//            System.out.println(node.data+"-->");
+//            node = node.previous;
+//        }
     }
     //2. insert node at head in doubly linked list
     public  void insertAtFirst(int data){
@@ -75,12 +75,12 @@ public class DoublyLinkedListClass {
         newNode.previous = current;
     }
     //5. deleteHead to delete the head node
-    public void deletehead(Node data){
+    public void deletehead(int data){
         Node current = head;
         Node newnode = new Node(data);
-        if( newnode == current){
+        if( newnode.data == head.data){
             head.next = head;
-            head.previous = null;
+
         }
     }
 
@@ -117,7 +117,8 @@ public class DoublyLinkedListClass {
         dll.InsertAtEnd(99);
         dll.printlist();*/
         System.out.println("\nlinked list after deletion is");
-        dll.deletehead(head);
+        dll.deletehead(11);
+        dll.printlist();
 
 
     }
